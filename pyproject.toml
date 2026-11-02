@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contextual-bandit-policy-evaluation"
+version = "0.1.0"
+description = "Time-aware off-policy evaluation on a bounded Open Bandit Dataset sample"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = { file = "LICENSE" }
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<4",
+  "scikit-learn>=1.5,<2",
+]
+
+[project.optional-dependencies]
+app = [
+  "fastapi>=0.115,<1",
+  "plotly>=5.24,<7",
+  "streamlit>=1.58,<2",
+  "uvicorn[standard]>=0.34,<1",
+]
+dev = [
+  "httpx>=0.28,<1",
+  "pytest>=8.3,<9",
+  "ruff>=0.11,<1",
+]
+
+[project.scripts]
+bandit-ope-fetch = "bandit_ope.data:main"
+bandit-ope-train = "bandit_ope.train:main"
+bandit-ope-evaluate = "bandit_ope.evaluate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

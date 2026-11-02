@@ -1,0 +1,107 @@
+{
+  "selection_rule": "Lowest validation log loss, with Brier score as a tie-breaker.",
+  "target_policy": "Uniform random over 80 items at each position.",
+  "train_days": [
+    "2019-11-24",
+    "2019-11-26"
+  ],
+  "validation_days": [
+    "2019-11-27"
+  ],
+  "train_rows": 24667,
+  "validation_rows": 8209,
+  "train_click_rate": 0.004175619248388536,
+  "validation_click_rate": 0.005238153246436838,
+  "selected_model": {
+    "name": "contextual_logistic_c_1",
+    "log_loss": 0.032699973913891664,
+    "brier_score": 0.005211060066731888,
+    "mean_prediction": 0.004335240645346546,
+    "model_parameters": {
+      "name": "contextual_logistic",
+      "C": 1.0,
+      "categorical_features": [
+        "item_id",
+        "position",
+        "user_feature_0",
+        "user_feature_1",
+        "user_feature_2",
+        "user_feature_3"
+      ],
+      "numeric_feature": "log1p(affinity between current user and selected item)",
+      "max_iter": 150
+    }
+  },
+  "candidate_results": [
+    {
+      "name": "item_position_rate",
+      "log_loss": 0.03398028204265914,
+      "brier_score": 0.005220729364059697,
+      "mean_prediction": 0.004212321150292672,
+      "model_parameters": {
+        "name": "item_position_rate",
+        "prior_strength": 100.0
+      }
+    },
+    {
+      "name": "contextual_logistic_c_0.1",
+      "log_loss": 0.03288042273282427,
+      "brier_score": 0.005214209765198078,
+      "mean_prediction": 0.005236915954499883,
+      "model_parameters": {
+        "name": "contextual_logistic",
+        "C": 0.1,
+        "categorical_features": [
+          "item_id",
+          "position",
+          "user_feature_0",
+          "user_feature_1",
+          "user_feature_2",
+          "user_feature_3"
+        ],
+        "numeric_feature": "log1p(affinity between current user and selected item)",
+        "max_iter": 150
+      }
+    },
+    {
+      "name": "contextual_logistic_c_1",
+      "log_loss": 0.032699973913891664,
+      "brier_score": 0.005211060066731888,
+      "mean_prediction": 0.004335240645346546,
+      "model_parameters": {
+        "name": "contextual_logistic",
+        "C": 1.0,
+        "categorical_features": [
+          "item_id",
+          "position",
+          "user_feature_0",
+          "user_feature_1",
+          "user_feature_2",
+          "user_feature_3"
+        ],
+        "numeric_feature": "log1p(affinity between current user and selected item)",
+        "max_iter": 150
+      }
+    },
+    {
+      "name": "contextual_logistic_c_10",
+      "log_loss": 0.03362687281972325,
+      "brier_score": 0.005232877148901199,
+      "mean_prediction": 0.0041663094829383655,
+      "model_parameters": {
+        "name": "contextual_logistic",
+        "C": 10.0,
+        "categorical_features": [
+          "item_id",
+          "position",
+          "user_feature_0",
+          "user_feature_1",
+          "user_feature_2",
+          "user_feature_3"
+        ],
+        "numeric_feature": "log1p(affinity between current user and selected item)",
+        "max_iter": 150
+      }
+    }
+  ]
+}

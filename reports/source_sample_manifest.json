@@ -1,0 +1,231 @@
+{
+  "dataset": "Open Bandit Dataset",
+  "revision": "90a1283aecd19026caf15a0840af1176a41f6a76",
+  "sampling_method": "Eight deterministic, evenly spaced HTTP byte ranges per source CSV; each range is parsed only between complete CSV row boundaries.",
+  "sampling_note": "This bounded time-stratified sample is not the official 10,000-row example subset and is not a probability sample. Verify timestamp coverage and source row IDs before analysis.",
+  "policies": {
+    "bts": {
+      "rows": 65640,
+      "days": [
+        "2019-11-24",
+        "2019-11-26",
+        "2019-11-27",
+        "2019-11-28",
+        "2019-11-29",
+        "2019-11-30"
+      ],
+      "first_timestamp_utc": "2019-11-24T00:00:00.047846+00:00",
+      "last_timestamp_utc": "2019-11-30T23:59:59.920907+00:00",
+      "click_rate": 0.004707495429616087,
+      "mean_logged_propensity": 0.07465083043875685,
+      "item_count": 80,
+      "position_count": 3,
+      "source_path": "bts/all/all.csv",
+      "source_bytes": 6321017454,
+      "source_etag_sha256": "eedf88203f18b04103eb2ba8364fbdbe2c9254f919929c43dddbbcf28e20eeee",
+      "sample_file": "data/raw/bts_all_sample.csv.gz",
+      "sample_sha256": "19b581ce3ea8cabc46a9e4ccbb7f4ed1f3ec52fbce4d7b6c429ca2b572fc6f5b",
+      "sample_bytes": 943921,
+      "windows": [
+        {
+          "window_index": 0,
+          "start_byte": 0,
+          "end_byte_inclusive": 4194303,
+          "window_sha256": "541e1f06a53d61114a5800702c21996b3f61156bb51eaaf061ae8daae5bc5646",
+          "complete_rows": 8255,
+          "retained_rows": 8255,
+          "first_timestamp": "2019-11-24 00:00:00.047846+00:00",
+          "last_timestamp": "2019-11-24 00:06:40.061076+00:00"
+        },
+        {
+          "window_index": 1,
+          "start_byte": 902403307,
+          "end_byte_inclusive": 906597610,
+          "window_sha256": "c57d7c64e466f6ac10202574faefa50b1dc9ba95a07da77f6c5accb6a9880ae9",
+          "complete_rows": 8197,
+          "retained_rows": 8197,
+          "first_timestamp": "2019-11-24 21:23:11.520012+00:00",
+          "last_timestamp": "2019-11-24 21:41:35.122726+00:00"
+        },
+        {
+          "window_index": 2,
+          "start_byte": 1804806614,
+          "end_byte_inclusive": 1809000917,
+          "window_sha256": "7dfc38c7c733d910a9a9229240689418bda9ac6ad6a726a6e7e4d5fd7a51e46a",
+          "complete_rows": 8215,
+          "retained_rows": 8215,
+          "first_timestamp": "2019-11-26 03:03:28.818014+00:00",
+          "last_timestamp": "2019-11-26 03:10:41.845570+00:00"
+        },
+        {
+          "window_index": 3,
+          "start_byte": 2707209921,
+          "end_byte_inclusive": 2711404224,
+          "window_sha256": "3345da2ac734d27f0e67cf157944c97a4743681a0db7e2f17a6b9e6f3989e5ba",
+          "complete_rows": 8209,
+          "retained_rows": 8209,
+          "first_timestamp": "2019-11-27 04:25:04.800211+00:00",
+          "last_timestamp": "2019-11-27 04:31:18.249035+00:00"
+        },
+        {
+          "window_index": 4,
+          "start_byte": 3609613229,
+          "end_byte_inclusive": 3613807532,
+          "window_sha256": "87322b3c638c118f9dbc358c661e9a88f13fa2a5e630cf4ee7ddf6de7f85e5e1",
+          "complete_rows": 8196,
+          "retained_rows": 8196,
+          "first_timestamp": "2019-11-28 02:54:46.164385+00:00",
+          "last_timestamp": "2019-11-28 03:01:07.973096+00:00"
+        },
+        {
+          "window_index": 5,
+          "start_byte": 4512016536,
+          "end_byte_inclusive": 4516210839,
+          "window_sha256": "c1daeef23d44fa2f2f7ec437b3d4b35c4cf84f10aff3136e4b4e3f313e739bc6",
+          "complete_rows": 8196,
+          "retained_rows": 8196,
+          "first_timestamp": "2019-11-28 22:43:43.793535+00:00",
+          "last_timestamp": "2019-11-28 22:51:14.607421+00:00"
+        },
+        {
+          "window_index": 6,
+          "start_byte": 5414419843,
+          "end_byte_inclusive": 5418614146,
+          "window_sha256": "60544ab8e78518fd46ea76a4d5fce3df5190e928c25acf2c7ec9410ba9da2a0a",
+          "complete_rows": 8193,
+          "retained_rows": 8193,
+          "first_timestamp": "2019-11-29 21:04:25.997737+00:00",
+          "last_timestamp": "2019-11-29 21:24:01.896500+00:00"
+        },
+        {
+          "window_index": 7,
+          "start_byte": 6316823150,
+          "end_byte_inclusive": 6321017453,
+          "window_sha256": "f3593ee64fe54aa340232a75bb97550e1c97b7f7b5db172c2f2c09f391cd8146",
+          "complete_rows": 8179,
+          "retained_rows": 8179,
+          "first_timestamp": "2019-11-30 23:51:29.413367+00:00",
+          "last_timestamp": "2019-11-30 23:59:59.920907+00:00"
+        }
+      ],
+      "source_row_id_min": 0,
+      "source_row_id_max": 12357199
+    },
+    "random": {
+      "rows": 66320,
+      "days": [
+        "2019-11-24",
+        "2019-11-26",
+        "2019-11-27",
+        "2019-11-28",
+        "2019-11-29",
+        "2019-11-30"
+      ],
+      "first_timestamp_utc": "2019-11-24T00:00:00.007365+00:00",
+      "last_timestamp_utc": "2019-11-30T23:59:59.408889+00:00",
+      "click_rate": 0.0032117008443908325,
+      "mean_logged_propensity": 0.0125,
+      "item_count": 80,
+      "position_count": 3,
+      "source_path": "random/all/all.csv",
+      "source_bytes": 695501426,
+      "source_etag_sha256": "96edbc3147fd6cd33481c9c80a1a315b8c6c7baaf7323d276b1782665da6fc72",
+      "sample_file": "data/raw/random_all_sample.csv.gz",
+      "sample_sha256": "7d4b9e8aa70f9d5f164559e10acd99950313cad5f366f393732d7e4b5018158e",
+      "sample_bytes": 942437,
+      "windows": [
+        {
+          "window_index": 0,
+          "start_byte": 0,
+          "end_byte_inclusive": 4194303,
+          "window_sha256": "f7929835948be12dab141773ebb1fc691930e8511c8cfabe7f25670382aecf27",
+          "complete_rows": 8322,
+          "retained_rows": 8322,
+          "first_timestamp": "2019-11-24 00:00:00.007365+00:00",
+          "last_timestamp": "2019-11-24 00:59:04.426361+00:00"
+        },
+        {
+          "window_index": 1,
+          "start_byte": 98758160,
+          "end_byte_inclusive": 102952463,
+          "window_sha256": "649d78837ae489a45ed3ea62ef67df19fc183b4a0f680affe87bc31dc72722ea",
+          "complete_rows": 8290,
+          "retained_rows": 8290,
+          "first_timestamp": "2019-11-24 21:33:23.457325+00:00",
+          "last_timestamp": "2019-11-24 23:29:20.024879+00:00"
+        },
+        {
+          "window_index": 2,
+          "start_byte": 197516321,
+          "end_byte_inclusive": 201710624,
+          "window_sha256": "d8eaa8f699be7e370f0978da07be440ee6934aa7d7f6771e2d77bc0cd1165483",
+          "complete_rows": 8290,
+          "retained_rows": 8290,
+          "first_timestamp": "2019-11-26 03:00:58.623283+00:00",
+          "last_timestamp": "2019-11-26 03:55:17.839879+00:00"
+        },
+        {
+          "window_index": 3,
+          "start_byte": 296274481,
+          "end_byte_inclusive": 300468784,
+          "window_sha256": "81fa5d3e9e21276ef197d034815e273adcdc1dfc0184cc09009eee0b0ff76893",
+          "complete_rows": 8290,
+          "retained_rows": 8290,
+          "first_timestamp": "2019-11-27 04:13:39.091715+00:00",
+          "last_timestamp": "2019-11-27 05:08:21.206318+00:00"
+        },
+        {
+          "window_index": 4,
+          "start_byte": 395032641,
+          "end_byte_inclusive": 399226944,
+          "window_sha256": "1242fe91563b01716a8403ac4ecd4d4d8b05f16d97a4c960925afab56f1bbbb3",
+          "complete_rows": 8290,
+          "retained_rows": 8290,
+          "first_timestamp": "2019-11-28 02:32:50.985776+00:00",
+          "last_timestamp": "2019-11-28 03:21:19.067146+00:00"
+        },
+        {
+          "window_index": 5,
+          "start_byte": 493790801,
+          "end_byte_inclusive": 497985104,
+          "window_sha256": "8c8de67a8164e99e7aba594b4ee93bb6912452d3ee193dee22f96f5c15ebefd6",
+          "complete_rows": 8290,
+          "retained_rows": 8290,
+          "first_timestamp": "2019-11-28 22:01:30.803554+00:00",
+          "last_timestamp": "2019-11-28 23:12:46.834864+00:00"
+        },
+        {
+          "window_index": 6,
+          "start_byte": 592548962,
+          "end_byte_inclusive": 596743265,
+          "window_sha256": "94d7d66cfd524dce89242428327f0acfdf99eb8853216421b2cc977ea7dc2c32",
+          "complete_rows": 8274,
+          "retained_rows": 8274,
+          "first_timestamp": "2019-11-29 17:47:05.637699+00:00",
+          "last_timestamp": "2019-11-29 21:53:34.268402+00:00"
+        },
+        {
+          "window_index": 7,
+          "start_byte": 691307122,
+          "end_byte_inclusive": 695501425,
+          "window_sha256": "8445ebe78f00a0aab71cce318ec77ad64fc93e311012f1a5ac78eec813c7b39d",
+          "complete_rows": 8274,
+          "retained_rows": 8274,
+          "first_timestamp": "2019-11-30 22:38:31.537687+00:00",
+          "last_timestamp": "2019-11-30 23:59:59.408889+00:00"
+        }
+      ],
+      "source_row_id_min": 0,
+      "source_row_id_max": 1374326
+    }
+  },
+  "common_days": [
+    "2019-11-24",
+    "2019-11-26",
+    "2019-11-27",
+    "2019-11-28",
+    "2019-11-29",
+    "2019-11-30"
+  ],
+  "created_utc": "2026-11-02T23:16:28.721164+00:00"
+}
