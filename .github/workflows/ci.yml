@@ -12,9 +12,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
       - name: Install locked project dependencies
-        run: make install-lock
+        run: python -m venv .venv && make install-lock
       - name: Run unit and API tests
         run: make test
       - name: Run lint and formatting checks
